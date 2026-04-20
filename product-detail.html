@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nam Khánh | Chi tiết sản phẩm</title>
+  <link rel="icon" type="image/png" href="assets/images/logo-nam-khánh.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .variant-tag {
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: #fff;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s;
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+    .variant-tag:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    .variant-tag.is-active {
+      border-color: var(--primary);
+      color: var(--primary);
+      font-weight: 600;
+      background: rgba(0, 180, 216, 0.05);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo-nam-khánh.png" alt="Nam Khánh Logo">
+        <span>Nam Khánh</span>
+      </a>
+      <nav class="nav-links" data-mobile-nav>
+        <a data-nav href="index.html">Trang chủ</a>
+        <a data-nav href="about.html">Giới thiệu</a>
+        <a data-nav href="products.html">Sản phẩm</a>
+        <a data-nav href="contact.html">Liên hệ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="contact.html">Nhận báo giá</a>
+        <button class="mobile-toggle" type="button" aria-label="Mở menu" data-mobile-toggle>☰</button>
+      </div>
+    </div>
+  </header>
+
+<main class="section">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a><span>/</span><a href="products.html">Sản phẩm</a><span>/</span><span id="breadcrumb-name">Chi tiết</span></div>
+    
+    <div class="detail-layout" id="product-detail-container" style="display: none; margin-top: 24px;">
+      <div class="detail-gallery">
+        <div class="detail-main-image">
+          <img id="detail-image" data-gallery-main src="" alt="Sản phẩm">
+        </div>
+        <div id="detail-thumbs" class="detail-thumbs"></div>
+      </div>
+      <div class="detail-info">
+        <span class="product-category" id="detail-category" style="color: var(--primary); font-weight: 600; text-transform: uppercase; font-size: 1rem;"></span>
+        <h1 class="section-title" id="detail-name" style="margin: 8px 0 16px; font-size: 2.25rem;"></h1>
+        <div class="product-meta-row" style="display: flex; gap: 24px; margin-bottom: 24px; color: var(--text-light); font-size: 1.1rem;">
+          <span>Mã SKU: <strong id="detail-sku" style="color: var(--text);"></strong></span>
+          <span>Tình trạng: <strong style="color: #10B981;">Còn hàng</strong></span>
+        </div>
+        <div class="product-price" id="detail-price" style="font-size: 2.25rem; color: var(--primary); font-weight: 700; margin-bottom: 24px;"></div>
+        
+        <hr style="margin: 24px 0; border: none; border-top: 1px solid var(--border);">
+
+        <div class="product-description" style="margin-bottom: 32px;">
+          <h3>Mô tả sản phẩm</h3>
+          <p id="detail-desc" style="color: var(--text-light); line-height: 1.6; margin-top: 12px;"></p>
+        </div>
+        
+        <div class="product-actions" style="display: flex; gap: 16px;">
+          <a class="btn btn-primary" href="contact.html">Nhận báo giá sỉ</a>
+          <a class="btn btn-outline" href="products.html">Về danh mục sản phẩm</a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="not-found-state" class="empty-state hidden" style="text-align: center; padding: 60px 0; display: none;">
+      <h3>Không tìm thấy sản phẩm</h3>
+      <p style="margin-bottom: 24px;">Sản phẩm bạn đang tìm kiếm không tồn tại hoặc đã bị xoá.</p>
+      <a class="btn btn-primary" href="products.html">Về danh mục sản phẩm</a>
+    </div>
+  </div>
+</main>
+<script src="assets/js/products-data.js"></script>
+<script src="assets/js/detail.js"></script>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px;">
+          <img src="assets/images/logo-nam-khánh.png" alt="Nam Khánh Logo">
+          <span>Nam Khánh</span>
+        </div>
+        <p>Nhà cung cấp văn phòng phẩm hiện đại với phong cách trẻ trung, sản phẩm đa dạng và giải pháp trưng bày phù hợp cho cửa hàng, trường học, doanh nghiệp.</p>
+      </div>
+      <div>
+        <h3>Danh mục nhanh</h3>
+          <ul>
+            <li><a href="products.html">Giấy các loại</a></li>
+            <li><a href="products.html">Bút các loại</a></li>
+            <li><a href="products.html">File hồ sơ</a></li>
+            <li><a href="products.html">Băng dính & màng chít</a></li>
+            <li><a href="products.html">Dập ghim & đục lỗ</a></li>
+            <li><a href="products.html">Phụ kiện khác</a></li>
+            <li><a href="products.html">Đồ trang trí</a></li>
+          </ul>
+      </div>
+      <div>
+        <h3>Kết nối</h3>
+        <ul>
+          <li>Email: phankhanhfj@gmail.com</li>
+          <li>Hotline: 0766088886</li>
+          <li>Zalo: 0766088886</li>
+          <li>Địa chỉ: Khu X1, Thôn Nguyên Khê, Xã Phúc Thịnh, TP Hà Nội, Việt Nam</li>
+          <li><a href="contact.html">Gửi yêu cầu hợp tác</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Nam Khánh.</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

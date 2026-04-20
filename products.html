@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nam Khánh | Sản phẩm</title>
+  <link rel="icon" type="image/png" href="assets/images/logo-nam-khánh.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo-nam-khánh.png" alt="Nam Khánh Logo">
+        <span>Nam Khánh</span>
+      </a>
+      <nav class="nav-links" data-mobile-nav>
+        <a data-nav href="index.html">Trang chủ</a>
+        <a data-nav href="about.html">Giới thiệu</a>
+        <a data-nav href="products.html">Sản phẩm</a>
+        <a data-nav href="contact.html">Liên hệ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="contact.html">Nhận báo giá</a>
+        <button class="mobile-toggle" type="button" aria-label="Mở menu" data-mobile-toggle>☰</button>
+      </div>
+    </div>
+  </header>
+
+<main class="section" style="padding-top: 24px;">
+  <div class="container">
+    <div class="breadcrumb" style="margin-bottom: 12px;"><a href="index.html">Trang chủ</a><span>/</span><span>Sản phẩm</span></div>
+    <div class="products-layout" style="margin-top: 0;">
+      <aside class="sidebar-panel">
+        <div class="filter-group">
+          <h4>Danh mục</h4>
+          <div data-category-filters class="category-hierarchy">
+            <!-- GIẤY CÁC LOẠI -->
+            <div class="category-group">
+              <label class="filter-label parent-label">
+                <input type="checkbox" value="GIẤY CÁC LOẠI" data-category-type="parent">
+                <strong>GIẤY CÁC LOẠI</strong>
+              </label>
+              <div class="child-filters">
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="Giấy in" data-category-type="child" data-parent="GIẤY CÁC LOẠI">
+                  <span>Giấy in</span>
+                </label>
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="Giấy ép plastic" data-category-type="child" data-parent="GIẤY CÁC LOẠI">
+                  <span>Giấy ép plastic</span>
+                </label>
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="Giấy decal" data-category-type="child" data-parent="GIẤY CÁC LOẠI">
+                  <span>Giấy decal</span>
+                </label>
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="Giấy bìa màu" data-category-type="child" data-parent="GIẤY CÁC LOẠI">
+                  <span>Giấy bìa màu</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- BÚT CÁC LOẠI -->
+            <div class="category-group">
+              <label class="filter-label parent-label">
+                <input type="checkbox" value="BÚT CÁC LOẠI" data-category-type="parent">
+                <strong>BÚT CÁC LOẠI</strong>
+              </label>
+              <div class="child-filters">
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="Bút ký" data-category-type="child" data-parent="BÚT CÁC LOẠI">
+                  <span>Bút ký</span>
+                </label>
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="Bút bi" data-category-type="child" data-parent="BÚT CÁC LOẠI">
+                  <span>Bút bi</span>
+                </label>
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="Bút xoá" data-category-type="child" data-parent="BÚT CÁC LOẠI">
+                  <span>Bút xoá</span>
+                </label>
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="Bút nhớ dòng" data-category-type="child" data-parent="BÚT CÁC LOẠI">
+                  <span>Bút nhớ dòng</span>
+                </label>
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="Bút dạ" data-category-type="child" data-parent="BÚT CÁC LOẠI">
+                  <span>Bút dạ</span>
+                </label>
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="Bút dạ quang" data-category-type="child" data-parent="BÚT CÁC LOẠI">
+                  <span>Bút dạ quang</span>
+                </label>
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="Bút lông dầu" data-category-type="child" data-parent="BÚT CÁC LOẠI">
+                  <span>Bút lông dầu</span>
+                </label>
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="Bút lông bảng" data-category-type="child" data-parent="BÚT CÁC LOẠI">
+                  <span>Bút lông bảng</span>
+                </label>
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="Bút chì" data-category-type="child" data-parent="BÚT CÁC LOẠI">
+                  <span>Bút chì</span>
+                </label>
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="Ruột bút" data-category-type="child" data-parent="BÚT CÁC LOẠI">
+                  <span>Ruột bút</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- FILE HỒ SƠ -->
+            <div class="category-group">
+              <label class="filter-label parent-label">
+                <input type="checkbox" value="FILE HỒ SƠ" data-category-type="parent">
+                <strong>FILE HỒ SƠ</strong>
+              </label>
+              <div class="child-filters">
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="File lá" data-category-type="child" data-parent="FILE HỒ SƠ">
+                  <span>File lá</span>
+                </label>
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="File còng" data-category-type="child" data-parent="FILE HỒ SƠ">
+                  <span>File còng</span>
+                </label>
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="File hộp" data-category-type="child" data-parent="FILE HỒ SƠ">
+                  <span>File hộp</span>
+                </label>
+                <label class="filter-label child-label">
+                  <input type="checkbox" value="Túi khuy và sổ" data-category-type="child" data-parent="FILE HỒ SƠ">
+                  <span>Túi khuy và sổ</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- OTHER PARENTS -->
+            <label class="filter-label">
+              <input type="checkbox" value="Băng dính" data-category-type="parent">
+              <strong>BĂNG DÍNH</strong>
+            </label>
+            <label class="filter-label">
+              <input type="checkbox" value="MÀNG CHÍT" data-category-type="parent">
+              <strong>MÀNG CHÍT</strong>
+            </label>
+            <!-- PHỤ KIỆN & THIẾT BỊ KHÁC -->
+            <!-- DẬP GHIM & ĐỤC LỖ -->
+            <label class="filter-label">
+              <input type="checkbox" value="Dập ghim & đục lỗ" data-category-type="parent">
+              <strong>DẬP GHIM & ĐỤC LỖ</strong>
+            </label>
+
+            <!-- PHỤ KIỆN KHÁC -->
+            <label class="filter-label">
+              <input type="checkbox" value="Phụ kiện khác" data-category-type="parent">
+              <strong>PHỤ KIỆN KHÁC</strong>
+            </label>
+
+            <label class="filter-label">
+              <input type="checkbox" value="ĐỒ TRANG TRÍ" data-category-type="parent">
+              <strong>ĐỒ TRANG TRÍ</strong>
+            </label>
+          </div>
+        </div>
+        <div class="filter-group"><h4>Số sản phẩm mỗi trang</h4><select class="select" data-per-page><option value="12">12 sản phẩm</option><option value="18">18 sản phẩm</option><option value="24">24 sản phẩm</option></select></div>
+        <button class="btn btn-outline" type="button" data-reset-filters style="width:100%;">Đặt lại bộ lọc</button>
+      </aside>
+      <section>
+        <div class="toolbar">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px; min-width: 20px; opacity: 0.6;">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" data-search-input placeholder="Tìm theo tên, mã SKU, danh mục...">
+          </div>
+          <select class="select" data-sort-select><option value="featured">Sắp xếp: Nổi bật</option><option value="price-asc">Giá tăng dần</option><option value="price-desc">Giá giảm dần</option><option value="name-asc">Tên A → Z</option></select>
+          <span class="badge" data-result-count>5 sản phẩm</span>
+        </div>
+        <div class="empty-state hidden" data-empty-state><h3>Không tìm thấy sản phẩm phù hợp</h3><p class="section-desc" style="margin:0 auto;">Bạn hãy thử đổi từ khóa tìm kiếm hoặc bỏ bớt bộ lọc để xem thêm kết quả.</p></div>
+        <div class="product-grid" data-product-grid>
+          <!-- Products will be dynamically rendered here -->
+        </div>
+
+        <div class="pagination" data-pagination></div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px;">
+          <img src="assets/images/logo-nam-khánh.png" alt="Nam Khánh Logo">
+          <span>Nam Khánh</span>
+        </div>
+        <p>Nhà cung cấp văn phòng phẩm hiện đại với phong cách trẻ trung, sản phẩm đa dạng và giải pháp trưng bày phù hợp cho cửa hàng, trường học, doanh nghiệp.</p>
+      </div>
+      <div>
+        <h3>Danh mục nhanh</h3>
+          <ul>
+            <li><a href="products.html">Giấy các loại</a></li>
+            <li><a href="products.html">Bút các loại</a></li>
+            <li><a href="products.html">File hồ sơ</a></li>
+            <li><a href="products.html">Băng dính & màng chít</a></li>
+            <li><a href="products.html">Dập ghim & đục lỗ</a></li>
+            <li><a href="products.html">Phụ kiện khác</a></li>
+            <li><a href="products.html">Đồ trang trí</a></li>
+          </ul>
+      </div>
+      <div>
+        <h3>Kết nối</h3>
+        <ul>
+          <li>Email: phankhanhfj@gmail.com</li>
+          <li>Hotline: 0766088886</li>
+          <li>Zalo: 0766088886</li>
+          <li>Địa chỉ: Khu X1, Thôn Nguyên Khê, Xã Phúc Thịnh, TP Hà Nội, Việt Nam</li>
+          <li><a href="contact.html">Gửi yêu cầu hợp tác</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Nam Khánh.</span>
+    </div>
+  </div>
+</footer>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/products-page.js"></script>
+</body>
